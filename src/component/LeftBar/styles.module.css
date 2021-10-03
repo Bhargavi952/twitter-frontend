@@ -1,0 +1,61 @@
+.sidebar_cont {
+    border-right: 1px solid #dadada6c;
+    height: 100vh;
+    width: 20vw;
+    padding-left: 4%;
+    padding-top: 10px;
+    position: fixed;
+}
+
+.links_cont {
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: black;
+    border-radius: 30px;
+    width: fit-content;
+    text-align: left;
+    padding: 6px 15px;
+    transition: 300ms;
+    margin: 8px 0;
+}
+
+.links_cont:hover {
+    background-color: rgba(85, 83, 83, 0.205);
+}
+
+.sidebar_links {
+    text-decoration: none;
+    height: 40px;
+    color: #0f1419;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.tweet_btn {
+    width: 14em;
+    height: 52px;
+    background: #1d9bf0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.profile_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0;
+    /* border: 1px solid red; */
+    border-radius: 30px;
+}
+
+.profile_div:hover {
+    background-color: rgba(85, 83, 83, 0.205);
+}
