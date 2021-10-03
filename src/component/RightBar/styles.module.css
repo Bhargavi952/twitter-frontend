@@ -1,0 +1,38 @@
+.rightbar_cont {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+}
+
+.main_cont {
+    display: flex;
+}
+
+.serachbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 340px;
+    border-radius: 25px;
+    background-color: #eee8e8;
+    padding: 8px;
+    height: 26px;
+    margin: 10px 0px;
+}
+
+.img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.left_cont {
+    width: 70%;
+}
+
+.right_cont {
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

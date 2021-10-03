@@ -12,7 +12,7 @@ const init = {
 
 const SignUp = () => {
   const [query, setQuery] = useState(init);
-  const history = useHistory()
+  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,13 +25,13 @@ const SignUp = () => {
   const signupFunc = (data) => {
     return axios({
       method: "post",
-      url: "http://localhost:9000/user/signup",
+      url: "https://twitter-backedn113.herokuapp.com/user/signup",
       data: data,
     })
       .then((res) => {
         console.log(res);
-        if(res.status === 200){
-            history.push("/login") 
+        if (res.status === 200) {
+          history.push("/login");
         }
       })
       .catch((err) => {

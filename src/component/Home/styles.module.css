@@ -1,0 +1,66 @@
+.home_cont {
+    width: 93%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid #dadada6c;
+    padding: 0 20px;
+    z-index: 3;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.user {
+    border-radius: 25px;
+    background-color: #bd4f4f;
+    color: #000;
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_cont {
+    display: inline-flex;
+    gap: 25px;
+    height: 7em;
+    border-bottom: 1px solid #dadada6c;
+    margin-bottom: 1px;
+}
+
+.right_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    width: 28.7em;
+}
+
+.files {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32em;
+}
+
+.tweet_btn {
+    background-color: #1d9bf0;
+    width: 4em;
+    height: 36px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}

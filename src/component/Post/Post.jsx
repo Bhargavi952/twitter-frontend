@@ -26,29 +26,16 @@ const Post = () => {
           <div className={styles.post_cont}>
             <div className={styles.user}>S</div>
             <div>
-              {userData.result.name ? (
-                <h4>
-                  {userData.result.name}
-                  <span style={{ color: "gray" }}>
-                    {`@${userData.result.name}` + username}
-                  </span>
+              <h4>
+                {item.username}
+                <span style={{ color: "gray" }}>
+                  {`@${item.username}` + username}
+                </span>
 
-                  <span style={{ color: "gray", padding: "10px" }}>
-                    {moment(item.createdAt).fromNow()}
-                  </span>
-                </h4>
-              ) : (
-                <h4>
-                  {item.username}
-                  <span style={{ color: "gray" }}>
-                    {`@${item.username}` + username}
-                  </span>
-
-                  <span style={{ color: "gray", padding: "10px" }}>
-                    {moment(item.createdAt).fromNow()}
-                  </span>
-                </h4>
-              )}
+                <span style={{ color: "gray", padding: "10px" }}>
+                  {moment(item.createdAt).fromNow()}
+                </span>
+              </h4>
               <p>{item.message}</p>
               <img className={styles.img} src={item.selectedFile} alt="" />
               <div style={{ display: "flex", gap: "10px" }}>

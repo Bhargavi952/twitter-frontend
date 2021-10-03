@@ -10,6 +10,7 @@ import more from "./Icons/more.png";
 import profile_more from "./Icons/profile_more.png";
 
 import twitterlogo from "../../file/twitterLogo.png";
+import { getData } from "../../Utils/LocalStorage";
 
 const links = [
   {
@@ -45,6 +46,8 @@ const links = [
 ];
 
 let LeftBar = () => {
+  const userData = getData("loginData");
+  // console.log(userData)
   return (
     <>
       <div className={styles.sidebar_cont}>
@@ -64,9 +67,7 @@ let LeftBar = () => {
                     alt={item.title}
                   />
 
-                  <p style={{ fontWeight: 400 }} className={styles.text}>
-                    {item.title}
-                  </p>
+                  <p className={styles.text}>{item.title}</p>
                 </Link>
               </div>
             );
@@ -75,12 +76,15 @@ let LeftBar = () => {
 
         <button className={styles.tweet_btn}>Tweet</button>
         <div className={styles.profile_div}>
-          <img 
-          width="45px"
+          <img
+            width="45px"
             src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
             alt="profile"
           />
-          <h3>Username</h3>
+          <h3>
+            {userData.result.name.charAt(0).toUpperCase() +
+              userData.result.name.slice(1)}
+          </h3>
           <img src={profile_more} alt="" />
         </div>
       </div>

@@ -1,9 +1,7 @@
 .post_cont {
     display: flex;
- gap: 5px;
-     border-bottom: 1px solid #dadada6c;
-   
-    
+    gap: 5px;
+    border-bottom: 1px solid #dadada6c;
 }
 
 .user {
@@ -21,8 +19,8 @@
     outline: none;
     background-color: #fff;
 }
-.img{
+
+.img {
     width: 400px;
     height: 400px;
-
 }

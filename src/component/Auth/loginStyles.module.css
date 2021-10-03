@@ -41,7 +41,7 @@ h1 {
     cursor: pointer;
     border-radius: 30px;
 }
-#loginBtn:hover{
 
+#loginBtn:hover {
     background-color: #1d9bf0
 }

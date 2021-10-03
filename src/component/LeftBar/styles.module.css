@@ -52,10 +52,27 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 15px 0;
-    /* border: 1px solid red; */
     border-radius: 30px;
 }
 
 .profile_div:hover {
     background-color: rgba(85, 83, 83, 0.205);
+}
+
+.text {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 420px) {
+    .text {
+        visibility: hidden;
+    }
+    .tweet_btn {
+        width: 7em;
+        height: 25px;
+        font-size: 10px;
+    }
+    .profile_div>img {
+        display: none;
+    }
 }

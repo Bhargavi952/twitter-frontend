@@ -3,6 +3,7 @@ import axios from "axios";
 import twitterLogo from "../../file/twitterLogo.png";
 import styles from "./loginStyles.module.css";
 import { useHistory } from "react-router-dom";
+import { getData, setData } from "../../Utils/LocalStorage";
 
 const init = {
   email: "",
@@ -26,11 +27,12 @@ const Login = () => {
   const loginFunc = (data) => {
     return axios({
       method: "post",
-      url: "http://localhost:9000/user/signin",
+      url: "https://twitter-backedn113.herokuapp.com/user/signin",
       data: data,
     })
       .then((res) => {
         setLoginData(res.data);
+        setData("loginData", res.data); // adding user detail to local storage
         if (res.status === 200) {
           history.push("/home");
         }
@@ -39,7 +41,8 @@ const Login = () => {
         console.log(err.message);
       });
   };
-  console.log(loginData.message);
+  // console.log(getData("loginData"));
+
   const handleSubmit = (e) => {
     e.preventDefault();
     loginFunc(query);
@@ -74,4 +77,3 @@ const Login = () => {
 };
 
 export default Login;
-
